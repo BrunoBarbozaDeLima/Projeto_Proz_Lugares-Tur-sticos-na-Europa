@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares Turísticos na Europa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #2C3E50;
+      background-color: #ECF0F1;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    header img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .header-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #FFFFFF;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #C0392B;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .cta button {
+      background-color: #C0392B;
+      color: #FFFFFF;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #A93226;
+    }
+
+    footer {
+      background: #2C3E50;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/istockphoto-2152911806-1024x1024.jpg" alt="Paisagem da Europa">
+    <div class="header-content">
+      <h1>Explore os Encantos da Europa</h1>
+      <p>Descubra destinos inesquecíveis e planeje sua próxima aventura!</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2 class="section-title">Principais Destinos</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="img/istockphoto-1680224711-1024x1024.jpg" alt="Torre Eiffel">
+        <div class="card-content">
+          <h3>Paris, França</h3>
+          <p>Conheça a Torre Eiffel, o Museu do Louvre e a icônica Catedral de Notre-Dame.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/istockphoto-1040950060-1024x1024.jpg" alt="Ponte de Rialto, Veneza">
+        <div class="card-content">
+          <h3>Veneza, Itália</h3>
+          <p>Explore os canais românticos e a charmosa Praça de São Marcos.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/istockphoto-475124388-1024x1024.jpg" alt="Santorini">
+        <div class="card-content">
+          <h3>Santorini, Grécia</h3>
+          <p>Encante-se com o pôr do sol em Oia e as praias de areia colorida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <button>Planeje Sua Viagem</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Lugares Turísticos na Europa. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
